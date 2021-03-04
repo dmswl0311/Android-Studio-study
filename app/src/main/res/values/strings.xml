@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">first</string>
+    <string name="name">Name</string>
+    <string name="job">Job</string>
+    <string name="age">Age</string>
+    <string name="signup">회원가입</string>
+    <string name="ID">ID</string>
+    <string name="PW">PW</string>
+    <string name="ok">가입</string>
+    <string name="cancel">취소</string>
+    <string name="button">Button</string>
+    <string name="button">Button</string>
+</resources>

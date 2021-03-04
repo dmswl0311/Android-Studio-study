@@ -15,4 +15,9 @@
     <string name="explain">안녕하세요. 반가워용</string>
     <string name="day">21.3.4</string>
     <string name="img" />
+    <string name="fiveBTN">five</string>
+    <string name="fourBTN">four</string>
+    <string name="threeBTN">three</string>
+    <string name="twoBTN">two</string>
+    <string name="oneBTN">one</string>
 </resources>

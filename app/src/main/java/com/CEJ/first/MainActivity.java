@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     // UI ---------------------------------------------------
     private LinearLayout button_eventLAY;
     private TextView txt;
+    private Button btn;
 
     // Control ----------------------------------------------
     private Random random=new Random(); // 선언과 동시에 객체 만듦
@@ -57,11 +59,18 @@ public class MainActivity extends AppCompatActivity {
             blue=random.nextInt(255);
 
             button_eventLAY.setBackgroundColor(Color.rgb(red,green,blue));
+            txt.setText("Random");
+            btn=findViewById(R.id.btn2);
+            btn.setVisibility(View.VISIBLE);
         }
         else if (v.getId()==R.id.btn2){
             Toast.makeText(MainActivity.this,"버튼2",Toast.LENGTH_SHORT).show();
             button_eventLAY.setBackgroundColor(Color.YELLOW);
             txt.setText("YELLOW");
+            btn.setVisibility(View.GONE);
+        }
+        if (v.getId()==R.id.textView6){
+            Log.i(TAG,"Title CLICK");
         }
     }
 }

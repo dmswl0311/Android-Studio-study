@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/oneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clickFunc"
+        android:text="@string/oneBTN" />
+
+    <Button
+        android:id="@+id/twoBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clickFunc"
+        android:text="@string/twoBTN" />
+
+    <Button
+        android:id="@+id/threeBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clickFunc"
+        android:text="@string/threeBTN" />
+
+    <Button
+        android:id="@+id/fourBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clickFunc"
+        android:text="@string/fourBTN" />
+
+    <Button
+        android:id="@+id/fiveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="clickFunc"
+        android:text="@string/fiveBTN" />
+</FrameLayout>

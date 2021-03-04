@@ -10,11 +10,23 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
-    //    멤버 변수 선언
+
+    // 멤버 변수 선언
+    // Debug ------------------------------------------------
     private final static String TAG="FIRST APP";
+
+    // UI ---------------------------------------------------
     private LinearLayout button_eventLAY;
     private TextView txt;
+
+    // Control ----------------------------------------------
+    private Random random=new Random(); // 선언과 동시에 객체 만듦
+    private int red;
+    private int green;
+    private int blue;
 
     //    멤버 메서드
     //    AppCompatActivity's method
@@ -40,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickFunc(View v){
         if (v.getId()==R.id.btn1){
-            Toast.makeText(MainActivity.this,"버튼1",Toast.LENGTH_SHORT).show();
-            button_eventLAY.setBackgroundColor(Color.BLUE);
-            txt.setText("BLUE");
+            red=random.nextInt(255);
+            green=random.nextInt(255);
+            blue=random.nextInt(255);
+
+            button_eventLAY.setBackgroundColor(Color.rgb(red,green,blue));
         }
         else if (v.getId()==R.id.btn2){
             Toast.makeText(MainActivity.this,"버튼2",Toast.LENGTH_SHORT).show();

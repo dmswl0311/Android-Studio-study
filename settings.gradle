@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "first"
+rootProject.name = "EXAM_Intent"
